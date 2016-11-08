@@ -31,17 +31,17 @@ html{
 DEFAULTS - MOBILE FIRST 
 ***************************/
 h1{
-    font: bold 4.236rem 'Cantata One', serif;
+    font: bold 2.250em 'Cantata One', serif;
 }
 h2{
-    font: bold 2.618rem 'Cantata One', 'more font stack stuff', serif;
+    font: bold 2.125em 'Cantata One', 'more font stack stuff', serif;
     text-align: left;
 }
 li, p, a{
-    font: bold 1.618rem 'Imprima', sans-serif;
+    font: bold 1em 'Imprima', sans-serif;
 }
 pre, code, kbd{
-    font: normal 1.0rem 'Imprima', 
+    font: normal 1em 'Imprima', 
 }
 /***************************
     LAYOUT - MOBILE FIRST
@@ -107,6 +107,25 @@ footer{
 }
 
 @media screen and (min-width:600px){
+/*************************** 
+DEFAULTS 
+***************************/
+h1{
+    font: bold 3.250em 'Cantata One', serif;
+}
+h2{
+    font: bold 2.125em 'Cantata One', 'more font stack stuff', serif;
+    text-align: left;
+}
+li, p, a{
+    font: bold 1.000em 'Imprima', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.000em 'Imprima', 
+}
+    /***************************
+    LAYOUT - min:600px
+***************************/
     .wrapper{
     width: 100%;
     margin: 0 auto;
@@ -152,12 +171,16 @@ main{
     width: 100%;
 }
 .colfirst {
-    float: none;
+    float: left;
     width: 50%;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 .colsecond {
-        float:right;
-        width:50%;
+    float:right;
+    width:50%;
+   padding: 1rem;
+    margin: 1rem 0;
     }
 .colfirst img{
     width: 60%;
@@ -174,10 +197,34 @@ footer{
     width: 90%;
     border-top: 2px solid black;
     list-style: none;
+    clear: both;
     
 }
 }
+
+
 @media screen and (min-width: 800px){
+    /*************************** 
+DEFAULTS 
+***************************/
+h1{
+    font: bold 3.375em 'Cantata One', serif;
+}
+h2{
+    font: bold 2.250em 'Cantata One', 'more font stack stuff', serif;
+    text-align: left;
+}
+li, p, a{
+    font: bold 1.125em 'Imprima', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.125em 'Imprima', 
+}
+
+
+/***************************
+    LAYOUT - min:800px
+***************************/
     .wrapper{
     width: 95%;
     margin: 0 auto;
@@ -225,14 +272,14 @@ main{
 .colfirst{
     float: left;
     width: 50%;
-    padding:0; 
-    margin:0;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 .colsecond {
  float: right;
   width: 50%;
-  padding:0; 
-  margin:0;
+  padding: 1rem;
+    margin: 1rem 0;
     }
 .colfirst img{
     width: 50%;
@@ -261,7 +308,28 @@ footer li {
         float:left;
     }
 }
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width: 1200px)
+    /*************************** 
+DEFAULTS 
+***************************/
+{
+    h1{
+    font: bold 4.000em 'Cantata One', serif;
+}
+h2{
+    font: bold 2.000em 'Cantata One', 'more font stack stuff', serif;
+    text-align: left;
+}
+li, p, a{
+    font: bold 1.250em 'Imprima', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.250em 'Imprima', 
+}
+/***************************
+    LAYOUT - min:1200px
+***************************/
     .wrapper{
     width: 95%;
     margin: 0 auto;
@@ -278,6 +346,8 @@ nav{
     width: 30%;
     float:left;
     border: none;
+    padding: 2rem;
+    margin: 1rem 0;
 }
 nav>ul{
     width: 100%;
@@ -309,14 +379,14 @@ main{
 .colfirst{
     float: left;
     width: 50%;
-    padding:0; 
-    margin:0;
+    padding: 2rem;
+    margin: 1rem 0;
 }
 .colsecond {
  float: right;
   width: 50%;
-  padding:0; 
-  margin:0;
+  padding: 2rem;
+    margin: 1rem 0;
     }
 .colfirst img{
     width: 55%;
